@@ -1,0 +1,230 @@
+/* Thiết lập chung */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #edeaea;
+}
+
+/* Khung chính của website (1200px, canh giữa, đổ bóng) */
+#main {
+    margin: 0px auto;
+    width: 1200px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* --- HEADER --- */
+header {
+    width: 1200px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #fff;
+}
+
+#dangnhap a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+#dangnhap a:hover {
+    color: red;
+}
+
+/* --- NAV & MENU NGANG --- */
+nav {
+    margin: 0px auto;
+    width: 1200px;
+    background-color: #206AB5;
+    height: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    float: left;
+}
+
+nav li {
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+nav li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: block;
+}
+
+nav li:hover a {
+    background-color: rgb(255, 123, 0);
+}
+
+nav form {
+    float: right;
+    padding-top: 10px;
+    padding-right: 15px;
+}
+
+nav form #text {
+    height: 30px;
+    width: 250px;
+    padding-left: 5px;
+}
+
+nav form #submit {
+    width: 80px;
+    height: 30px;
+    background-color: #ff7b00;
+    color: white;
+    border: none;
+    font-weight: bold;
+}
+
+nav form #submit:hover {
+    cursor: pointer;
+    background-color: #e06d00;
+}
+
+/* --- BỐ CỤC ARTICLE (LEFT - SECTION - RIGHT) --- */
+article {
+    display: table-row;
+}
+
+#left, #right, section {
+    vertical-align: top;
+    display: table-cell;
+    padding-top: 10px;
+}
+
+#left {
+    width: 250px;
+    padding-left: 10px;
+}
+
+#right {
+    width: 200px;
+    padding-right: 10px;
+}
+
+section {
+    width: 750px;
+    padding: 0px 8px;
+    text-align: center;
+}
+
+/* Định dạng các khối Sidebar (Left & Right) */
+#left > div, #right > div {
+    border: 1px solid #206AB5;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    background-color: #fff;
+}
+
+#left > div > p, #right > div > p {
+    background-color: #206AB5;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    height: 30px;
+    line-height: 30px;
+}
+
+#left > div > ul {
+    padding: 10px;
+    font-size: 14px;
+    list-style: none;
+}
+
+#left > div > ul > li {
+    height: 25px;
+    line-height: 25px;
+}
+
+#left > div > ul > li a {
+    color: #206AB5;
+    text-decoration: none;
+}
+
+#left > div > ul > li a:hover {
+    color: #ff0000;
+    text-decoration: underline;
+}
+
+/* --- PHẦN HIỂN THỊ SẢN PHẨM --- */
+.sach {
+    width: 220px;
+    float: left;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 1px dotted #206AB5;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.tensach {
+    padding-top: 5px;
+    font-weight: bold;
+    font-size: 15px;
+    height: 40px;
+}
+
+.dongia {
+    padding-top: 5px;
+    color: red;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.hinhsach {
+    padding: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 130px;
+    height: 170px;
+    transition: all 0.5s ease;
+}
+
+.hinhsach:hover {
+    transform: scale(1.1);
+}
+
+.btn-mua {
+    background-color: #ff7b00;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-weight: bold;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.btn-mua:hover {
+    background-color: #e06d00;
+}
+
+/* --- FOOTER --- */
+footer {
+    clear: both;
+    background-color: #206AB5;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    margin-top: 20px;
+}
