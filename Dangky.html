@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng ký thành viên</title>
+    <link rel="stylesheet" type="text/css" href="Script/Style.css">
+    <style>
+        .form-container {
+            width: 600px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 30px;
+            border: 2px dotted #206AB5;
+            border-radius: 8px;
+        }
+        .form-container h3 {
+            color: #206AB5;
+            border-bottom: 2px solid #206AB5;
+            padding-bottom: 5px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        .form-group {
+            margin-bottom: 12px;
+        }
+        .form-group label {
+            display: inline-block;
+            width: 150px;
+            font-weight: bold;
+        }
+        .form-group input {
+            width: 350px;
+            padding: 7px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main" style="padding: 20px;">
+        <h2><a href="Trangchu.html" style="text-decoration:none; color:#206AB5;">&larr; Quay lại trang chủ</a></h2>
+        
+        <div class="form-container">
+            <h2 style="text-align: center; color: #ff7b00;">ĐĂNG KÝ THÀNH VIÊN</h2>
+            <form id="regForm" onsubmit="return kiemTraDangKy()">
+                <h3>Thông tin cá nhân</h3>
+                <div class="form-group">
+                    <label>Họ và tên:</label>
+                    <input type="text" id="hoTen" placeholder="Nhập họ tên...">
+                </div>
+                <div class="form-group">
+                    <label>Năm sinh:</label>
+                    <input type="text" id="namSinh" placeholder="VD: 2002">
+                </div>
+                <div class="form-group">
+                    <label>Giới tính:</label>
+                    <input type="radio" name="gioiTinh" value="Nam" checked style="width: auto;"> Nam 
+                    <input type="radio" name="gioiTinh" value="Nữ" style="width: auto; margin-left: 20px;"> Nữ
+                </div>
+                <div class="form-group">
+                    <label>Số điện thoại:</label>
+                    <input type="text" id="soDienThoai" placeholder="VD: 0912345678">
+                </div>
+                <div class="form-group">
+                    <label>Email:</label>
+                    <input type="text" id="email" placeholder="VD: email@gmail.com">
+                </div>
+
+                <h3>Thông tin tài khoản</h3>
+                <div class="form-group">
+                    <label>Tên đăng nhập:</label>
+                    <input type="text" id="tenDangNhap" placeholder="Tên tài khoản...">
+                </div>
+                <div class="form-group">
+                    <label>Mật khẩu:</label>
+                    <input type="password" id="matKhau" placeholder="Mật khẩu...">
+                </div>
+                <div class="form-group">
+                    <label>Nhập lại mật khẩu:</label>
+                    <input type="password" id="nhapLaiMatKhau" placeholder="Xác nhận mật khẩu...">
+                </div>
+                
+                <div style="text-align: center; margin-top: 20px;">
+                    <input type="submit" value="Đăng ký" class="btn-mua" style="width: 120px; height: 35px; font-size: 15px;">
+                    <input type="reset" value="Hủy bỏ" style="width: 120px; height: 35px; font-size: 15px; margin-left: 10px; cursor: pointer;">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Nhúng file JS kiểm tra -->
+    <script src="Script/kiemtra.js"></script>
+</body>
+</html>
